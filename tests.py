@@ -14,7 +14,6 @@ class TestCase(unittest.TestCase):
         self.assertNotEqual(expected, task.firstrun())
 
     def test_get_area(self):
-        #Initialize an area equal to 9 x pi.
         tArea = 9 * math.pi
 
         # Check to see that 9pi is equal to what comes out of passing 3 into the getArea function.
