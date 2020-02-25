@@ -1,8 +1,6 @@
 import unittest
-from unittest import TestCase
-import math
-
 import task
+import math
 
 
 class TestCase(unittest.TestCase):
@@ -19,7 +17,7 @@ class TestCase(unittest.TestCase):
         #Initialize an area equal to 9 x pi.
         tArea = 9 * math.pi
 
-         # Check to see that 9pi is equal to what comes out of passing 3 into the getArea function.
+        # Check to see that 9pi is equal to what comes out of passing 3 into the getArea function.
         self.assertEqual(tArea, task.getArea(3))
 
         # Set tArea to 25 pi
@@ -35,6 +33,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(tArea, task.getArea(0))
 
         pass
+
 
 if __name__ == '__main__':
     unittest.main()
