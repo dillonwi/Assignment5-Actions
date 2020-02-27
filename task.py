@@ -1,5 +1,4 @@
 import math
-import datetime
 
 def firstrun():
     return "success"
@@ -24,3 +23,4 @@ def firstLast(list):
 def dateDiff(sDate, eDate):
     # Calculate the difference between the dates and return the diff.
     return (eDate - sDate).days
+
