@@ -17,6 +17,5 @@ def getArea(radius):
 
 
 def firstLast(list):
-
-    #Python allows for returning multiple values. We do this here by returning the first and last value.
+    # Python allows for returning multiple values. We do this here by returning the first and last value.
     return list[0], list[-1]

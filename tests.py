@@ -1,6 +1,4 @@
 import unittest
-from unittest import TestCase
-
 import task
 import math
 
@@ -38,15 +36,15 @@ class TestCase(unittest.TestCase):
     def test_first_last(self):
         tList = [7, 5, 4, 3, 10]
 
-        #Run the function
+        # Run the function
         rList = task.firstLast(tList)
 
-        #Check to see that the right values were returned from the function
+        # Check to see that the right values were returned from the function
         self.assertEqual(rList[0], 7)
         self.assertEqual(rList[-1], 10)
 
-        #Make a second list
-        tList2 = list(range(1,15))
+        # Make a second list
+        tList2 = list(range(1, 15))
 
         rList = task.firstLast(tList2)
 
