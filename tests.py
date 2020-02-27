@@ -1,4 +1,6 @@
 import unittest
+from unittest import TestCase
+
 import task
 import math
 
@@ -30,6 +32,27 @@ class TestCase(unittest.TestCase):
 
         # Check the running getArea with radius 0 returns 0
         self.assertEqual(tArea, task.getArea(0))
+
+        pass
+
+    def test_first_last(self):
+        tList = [7, 5, 4, 3, 10]
+
+        #Run the function
+        rList = task.firstLast(tList)
+
+        #Check to see that the right values were returned from the function
+        self.assertEqual(rList[0], 7)
+        self.assertEqual(rList[-1], 10)
+
+        #Make a second list
+        tList2 = list(range(1,15))
+
+        rList = task.firstLast(tList2)
+
+        # Check to see that the right values were returned from the function
+        self.assertEqual(rList[0], 1)
+        self.assertEqual(rList[-1], 14)
 
         pass
 
