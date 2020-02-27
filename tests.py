@@ -1,5 +1,6 @@
 import unittest
 import task
+from datetime import date
 import math
 
 
@@ -51,6 +52,27 @@ class TestCase(unittest.TestCase):
         # Check to see that the right values were returned from the function
         self.assertEqual(rList[0], 1)
         self.assertEqual(rList[-1], 14)
+
+        pass
+
+    def test_date_diff(self):
+        endDate = date(2020, 3, 31)
+        startDate = date(2020, 1, 10)
+
+        # Run the dates through date diff
+        tDate = task.dateDiff(startDate, endDate)
+
+        # Check the results. The difference should be 81
+        self.assertEqual(tDate, 81)
+
+        # Run this again with other dates
+        endDate = date(1994, 10, 4)
+        startDate = date(1991, 4, 8)
+
+        tDate = task.dateDiff(startDate, endDate)
+
+        # Check the results. The difference should be 1275
+        self.assertEqual(tDate, 1275)
 
         pass
 
