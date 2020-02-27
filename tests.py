@@ -5,7 +5,7 @@ import math
 
 class TestCase(unittest.TestCase):
 
-    def testl(self):
+    def test1(self):
         expected = "success"
         self.assertEqual(expected, task.firstrun())
 
